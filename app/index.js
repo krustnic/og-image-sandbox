@@ -3,11 +3,11 @@ const path = require('path');
 const express = require('express')
 
 const app = express()
-const port = 3000
+const port = 80
 
 app.use((req, res, next) => {
-    var filename = path.basename(req.url);
-    var extension = path.extname(filename);
+    const filename = path.basename(req.url);
+    const extension = path.extname(filename);
     if (extension === '.html') {
         console.log("ACCESS: ", JSON.stringify(req.url), JSON.stringify(req.headers));
     }
