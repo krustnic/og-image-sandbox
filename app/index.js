@@ -11,6 +11,7 @@ const getContent = (pageName, ogImagePath) => {
 <html>
 <head>
     <title>Title</title>
+    <link rel="canonical" href="${pageName}">
     <meta property="og:url" content="${pageName}">
     <meta property="og:title" content="og image server">
     <meta property="og:description" content="Owner">
